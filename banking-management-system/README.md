@@ -1,6 +1,6 @@
-# README.md for Banking Management System
+###Modern-Banking Mangement System
 
-# Banking Management System
+#  Modern Banking Management System
 
 This project is a Banking Management System that provides a web interface for users to manage their bank accounts. It is built using Python Flask for the backend, SQLite for data storage, and HTML, CSS, and JavaScript for the frontend.
 
@@ -78,6 +78,3 @@ banking-management-system
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License.
