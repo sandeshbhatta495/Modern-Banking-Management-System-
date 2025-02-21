@@ -1,7 +1,7 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
+from database.db import db
 from ..models.account import Account
 from ..models.transaction import Transaction
-from ..models.user import User
 
 banking_bp = Blueprint('banking', __name__)
 
@@ -34,3 +34,7 @@ def withdraw():
     else:
         flash('Invalid withdrawal amount.', 'danger')
     return redirect(url_for('banking.account_details', user_id=user_id))
+
+@banking_bp.route('/balance', methods=['GET'])
+def get_balance():
+    return jsonify({"message": "Balance endpoint"})

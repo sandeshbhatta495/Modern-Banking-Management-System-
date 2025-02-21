@@ -1,3 +1,4 @@
-# File: /banking-management-system/banking-management-system/src/routes/__init__.py
+from .auth import auth_bp
+from .banking import banking_bp
 
-# Leave this file empty
+__all__ = ['auth_bp', 'banking_bp']
