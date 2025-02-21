@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
 from database.db import db
-from ..models.account import Account
-from ..models.transaction import Transaction
+from models.account import Account
+from models.transaction import Transaction
 
 banking_bp = Blueprint('banking', __name__)
 
